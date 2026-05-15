@@ -11,17 +11,25 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo-go-to-def-layer {
+            bindings = <&to 0>;
+            key-positions = <38 39>;
+            layers = <1 2>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R               &kp T     &kp Y            &kp U              &kp I            &kp O    &kp P     &kp BACKSPACE
-&mt LCTRL ESCAPE  &kp A  &kp S  &kp D         &kp F               &kp G     &kp H            &kp J              &kp K            &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LSHFT         &kp Z  &kp X  &kp C         &kp V               &kp B     &kp N            &kp M              &kp COMMA        &kp DOT  &kp FSLH  &sl 3
-                                &kp LEFT_ALT  &mt LEFT_GUI SPACE  &tog 2    &lt 1 BACKSPACE  &mt RIGHT_GUI RET  &kp RIGHT_SHIFT
+&kp TAB           &kp Q  &kp W  &kp E         &kp R               &kp T     &kp Y   &kp U              &kp I            &kp O    &kp P     &kp BACKSPACE
+&mt LCTRL ESCAPE  &kp A  &kp S  &kp D         &kp F               &kp G     &kp H   &kp J              &kp K            &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHFT         &kp Z  &kp X  &kp C         &kp V               &kp B     &kp N   &kp M              &kp COMMA        &kp DOT  &kp FSLH  &sl 3
+                                &kp LEFT_ALT  &mt LEFT_GUI SPACE  &tog 2    &tog 1  &mt RIGHT_GUI RET  &kp RIGHT_SHIFT
             >;
         };
 
@@ -30,7 +38,7 @@
 &mt TILDE GRAVE  &mt EXCLAMATION NUMBER_1     &mt AT_SIGN NUMBER_2           &mt POUND NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5    &mt CARET NUMBER_6  &mt AMPERSAND N7  &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BSPC
 &trans           &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &mt PIPE BACKSLASH  &mt UNDER MINUS      &mt PLUS EQUAL    &trans              &trans            &trans           &trans                   &trans                    &trans
 &trans           &trans                       &trans                         &trans              &trans               &trans            &trans              &trans            &trans           &trans                   &trans                    &trans
-                                                                             &trans              &trans               &trans            &kp BACKSPACE       &trans            &kp COLON
+                                                                             &trans              &trans               &trans            &trans              &trans            &kp COLON
             >;
         };
 
