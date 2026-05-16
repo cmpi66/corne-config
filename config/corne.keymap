@@ -56,25 +56,25 @@
 &kp TAB    &kp Q         &kp W        &kp E        &kp R         &kp T        &kp Y  &kp U         &kp I        &kp O        &kp P            &kp BACKSPACE
 &kp ESC    &hm LCTRL A   &hm LALT S   &hm LGUI D   &kp F         &kp G        &kp H  &kp J         &hm RGUI K   &hm RALT L   &hm RCTRL SEMI   &kp SINGLE_QUOTE
 &kp LSHFT  &kp Z         &kp X        &kp C        &kp V         &kp B        &kp N  &kp M         &kp COMMA    &kp DOT      &kp FSLH         &kp RSHFT
-                                       &kp LALT     &mt LGUI SPC  &tog 1       &tog 2 &mt RGUI RET  &sl 4
+                                       &kp LALT     &mt LGUI SPACE  &tog 1       &tog 2 &mt RGUI RET  &sl 4
             >;
         };
 
         symbol_layer {
             bindings = <
-&kp GRAVE  &kp EXCL      &kp AT       &kp HASH     &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS      &kp ASTRK    &kp LPAR     &kp RPAR         &kp BSPC
+&kp GRAVE  &kp EXCL      &kp AT       &kp HASH     &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS      &kp ASTRK    &kp LPAR     &kp RPAR         &kp BACKSPACE
 &kp TILDE  &hm LCTRL EQL &hm LALT PIPE &hm LGUI UNDER &kp MINUS  &kp PLUS     &kp BSLH   &kp LBRC      &hm RGUI RBRC &hm RALT LBKT &hm RCTRL RBKT  &kp DQT
 &kp LSHFT  &kp TAB       &kp LT       &kp GT       &kp FSLH      &kp QMARK    &kp COLON  &kp SEMI      &kp SQT      &kp DOT      &kp COMMA        &kp RSHFT
-                                       &to 0        &kp SPC       &to 0        &tog 3     &kp RET       &to 2
+                                       &to 0        &kp SPACE       &to 0        &tog 3     &kp RET       &to 2
             >;
         };
 
         number_layer {
             bindings = <
-&kp TAB    &kp F1        &kp F2       &kp F3       &kp F4        &kp F5       &kp FSLH   &kp N7        &kp N8       &kp N9       &kp MINUS        &kp BSPC
+&kp TAB    &kp F1        &kp F2       &kp F3       &kp F4        &kp F5       &kp FSLH   &kp N7        &kp N8       &kp N9       &kp MINUS        &kp BACKSPACE
 &kp ESC    &hm LCTRL F6  &hm LALT F7  &hm LGUI F8  &kp F9        &kp F10      &kp ASTRK  &hm RGUI N4   &kp N5       &hm RALT N6  &hm RCTRL PLUS   &kp EQL
 &kp LSHFT  &kp F11       &kp F12      &kp PSCR     &kp CAPS      &kp UNDER    &kp N0     &kp N1        &kp N2       &kp N3       &kp DOT          &kp RET
-                                       &to 0        &kp SPC       &tog 3       &to 0      &kp RET       &to 1
+                                       &to 0        &kp SPACE       &tog 3       &to 0      &kp RET       &to 1
             >;
         };
 
@@ -83,7 +83,7 @@
 &trans       &trans        &trans       &trans       &trans        &kp PG_UP    &trans     &trans        &trans       &trans       &trans           &kp DEL
 &tmux_prefix &hm LCTRL HOME &hm LALT END &trans     &trans        &kp PG_DN    &kp LEFT   &kp DOWN      &kp UP       &kp RIGHT    &trans           &trans
 &kp LSHFT    &kp C_PREV    &kp C_PP     &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP &trans     &trans        &trans       &trans       &trans           &trans
-                                        &to 0        &kp SPC      &to 1        &to 2      &kp RET       &to 0
+                                        &to 0        &kp SPACE      &to 1        &to 2      &kp RET       &to 0
             >;
         };
 
@@ -91,7 +91,7 @@
             bindings = <
 &trans  &trans    &trans   &trans  &trans  &trans     &trans         &trans        &trans         &trans  &trans      &trans
 &trans  &trans    &trans   &trans  &trans  &trans     &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2   &trans  &bt BT_CLR  &trans
-&trans  &kp CAPS  &trans   &trans  &trans  &trans     &trans         &trans        &bt BT_DISC 2  &trans  &trans      &kp PSCR
+&trans  &kp CAPS  &trans   &trans  &trans  &trans     &trans         &trans        &bt BT_DISC 2  &trans  &trans      &kp PRINTSCREEN
                            &to 0   &trans  &trans     &trans         &trans        &trans
             >;
         };
