@@ -55,7 +55,7 @@
         default_layer {
             bindings = <
 &kp TAB    &kp Q         &kp W        &kp E        &kp R         &kp T        &kp Y  &kp U    &kp I      &kp O    &kp P     &kp BACKSPACE
-&kp ESC    &hm LCTRL A   &hm LALT S   &hm LGUI D   &kp F         &kp G        &kp H  &kp J    &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&hm LGUI ESC    &hm LCTRL A   &hm LALT S   &kp D   &kp F         &kp G        &kp H  &kp J    &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
 &kp LSHFT  &kp Z         &kp X        &kp C        &kp V         &kp B        &kp N  &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                                        &kp LALT     &kp SPACE     &tog 1       &tog 2 &mt RIGHT_GUI RET  &sl 4
             >;
@@ -64,7 +64,7 @@
         symbol_layer {
             bindings = <
 &kp GRAVE  &kp EXCL          &kp AT        &kp HASH       &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BACKSPACE
-&kp TILDE  &hm LCTRL PLUS    &hm LALT PIPE &hm LGUI UNDER &kp MINUS  &kp EQUAL    &kp BSLH   &kp LBRC  &kp RBRC   &kp LBKT  &kp RBKT  &kp DQT
+&hm LGUI TILDE  &hm LCTRL PLUS   &hm LALT PIPE &kp UNDER &kp MINUS  &kp EQUAL    &kp BSLH   &kp LBRC  &kp RBRC   &kp LBKT  &kp RBKT  &kp DQT
 &kp LSHFT  &kp TAB           &kp LT        &kp GT         &kp FSLH   &kp QMARK    &kp COLON  &kp SEMI  &kp SQT    &kp DOT   &kp COMMA &kp RSHFT
                                             &to 0          &kp SPACE  &to 0        &tog 3     &kp RET   &to 2
             >;
@@ -73,7 +73,7 @@
         number_layer {
             bindings = <
 &kp TAB    &kp F1            &kp F2       &kp F3            &kp F4     &kp F5       &kp FSLH   &kp N7  &kp N8  &kp N9  &kp MINUS  &kp BACKSPACE
-&kp ESC    &hm LCTRL F6      &hm LALT F7  &hm LGUI F8       &kp F9     &kp F10      &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS   &kp EQUAL
+&hm LGUI ESC    &hm LCTRL F6     &hm LALT F7  &kp F8       &kp F9     &kp F10      &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS   &kp EQUAL
 &kp LSHFT  &kp F11           &kp F12      &kp PRINTSCREEN   &kp CAPS   &kp UNDER    &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT    &kp RET
                                            &to 0             &kp SPACE  &tog 3       &to 0      &kp RET &to 1
             >;
